@@ -8,7 +8,7 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/splash',
+      path: '/',
       name: 'splash',
       component: Splash
     },
