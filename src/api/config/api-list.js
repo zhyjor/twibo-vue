@@ -1,10 +1,10 @@
 const keyConfig = {
   app_key: '2059013098',
   app_secret: '694cef3f5c41b4c3051d74fa11b990ce',
-  redirect_uri: 'http://192.168.0.108:8089/splash'
+  redirect_uri: 'http://192.168.0.108:8080/splash'
 }
 const hostConfig = {
-  local: 'http://192.168.0.108:8089/',
+  local: 'http://192.168.0.108:8080/',
   host: 'https://pixel-api.herokuapp.com/',
   oauth: 'https://open.weibo.cn/oauth2/authorize'
 }

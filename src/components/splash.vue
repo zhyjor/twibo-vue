@@ -10,11 +10,32 @@
 </template>
 
 <script>
+  import {HOST_CONCIG, KEY_CONFIG, DEBUG} from '../api/config/api-list'
+
   export default {
     name: 'splash',
     data () {
       return {
         msg: 'Welcome to Your Vue.js App'
+      }
+    },
+    methods: {
+      oauth () {
+        let vue = this
+        if (DEBUG) {
+          vue.goMain()
+        } else {
+          let clientId = KEY_CONFIG.app_key
+          let redirectUri = KEY_CONFIG.redirect_uri
+          let oauthUrl = HOST_CONCIG.oauth
+          window.open(oauthUrl + '?client_id=' + clientId + '&redirect_uri=' + redirectUri, '_self', '', true)
+        }
+      },
+      goMain () {
+        let vue = this
+        setTimeout(function () {
+          vue.$router.replace({name: 'main'})
+        }, 2000)
       }
     }
   }
@@ -41,7 +62,8 @@
     text-align: center;
     padding-top: 2rem;
   }
-  .desc p{
+
+  .desc p {
     font-size: 16px;
     line-height: 24px;
   }
