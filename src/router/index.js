@@ -11,7 +11,7 @@ const router = new Router({
   mode: 'history',
   routes: [
     {
-      path: '/',
+      path: '/splash',
       name: 'splash',
       component: Splash
     },
@@ -23,6 +23,10 @@ const router = new Router({
         checkAuth: true
       },
       children: []
+    },
+    {
+      path: '*',
+      redirect: '/splash'
     }
   ]
 })
