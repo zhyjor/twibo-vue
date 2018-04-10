@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Splash from '../components/splash'
 import Main from '../components/main'
+import Home from '../components/home'
+
 import store from '../store/'
 import {DEBUG} from '../api/config/api-list'
 
@@ -22,7 +24,16 @@ const router = new Router({
       meta: {
         checkAuth: true
       },
-      children: []
+      children: [
+        {
+          path: 'home',
+          name: 'home',
+          component: Home,
+          meta: {
+            requiresAuth: true
+          }
+        }
+      ]
     },
     {
       path: '*',
