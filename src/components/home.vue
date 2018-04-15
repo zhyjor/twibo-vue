@@ -1,12 +1,12 @@
 <template>
   <div>
     hhhhhhhh
-    <tab-bar></tab-bar>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
   import tabBar from './tabBar.vue'
+  import titleBar from './titleBar.vue'
 
   export default {
     name: 'home',
@@ -14,7 +14,8 @@
       return {}
     },
     components: {
-      tabBar
+      tabBar,
+      titleBar
     }
   }
 </script>
