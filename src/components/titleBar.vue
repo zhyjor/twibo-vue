@@ -55,7 +55,6 @@
     padding-right: 1rem;
     display: flex;
     flex-flow: row;
-    position: fixed;
     top: 0;
     z-index: 30;
   }

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Splash from '../components/splash'
-import Main from '../components/main'
+import Main from '../components/homepage'
 import Home from '../components/home'
 
 import store from '../store/'

@@ -85,6 +85,7 @@
     display: flex;
     margin: 0;
     padding: 0;
+    border-bottom: solid #7e8c8d 1px;
     .no-select{
       color: #657786;
     }
