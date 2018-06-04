@@ -28,4 +28,4 @@ const apiRouter = {
 export const HOST_CONCIG = hostConfig
 export const KEY_CONFIG = keyConfig
 export const API_ROUTER_CONFIG = apiRouter
-export const DEBUG = false
+export const DEBUG = true

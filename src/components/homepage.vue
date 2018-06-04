@@ -2,6 +2,13 @@
   <div>
     <title-bar :userInfo="userInfos"></title-bar>
     <tab-bar></tab-bar>
+    <div id="content" class="app-content">
+      <transition name="fade">
+        <keep-alive>
+          <router-view></router-view>
+        </keep-alive>
+      </transition>
+    </div>
   </div>
 </template>
 
@@ -98,5 +105,12 @@
 </script>
 
 <style scoped lang="scss">
+  .fade-enter-active {
+    transition: opacity .5s
+  }
 
+  .fade-enter,
+  .fade-leave-active {
+    opacity: 0
+  }
 </style>
