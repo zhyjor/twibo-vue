@@ -1,7 +1,7 @@
 <template>
   <div>
     <title-bar :userInfo="userInfos"></title-bar>
-    <tab-bar></tab-bar>
+    <tab-bar @tab="switchTab"></tab-bar>
     <div id="content" class="app-content">
       <transition name="fade">
         <keep-alive>
@@ -62,9 +62,13 @@
         this.$router.push({name: 'explore'})
         this.currentPage = 'explore'
       },
-      showNotifyPage () {
-        this.$router.push({name: 'notify'})
-        this.currentPage = 'notify'
+      showNotificationsPage () {
+        this.$router.push({name: 'notifications'})
+        this.currentPage = 'notifications'
+      },
+      showmMessagesPage () {
+        this.$router.push({name: 'messages'})
+        this.currentPage = 'messages'
       },
       refresh () {
         switch (this.currentPage) {
@@ -80,15 +84,19 @@
       },
       switchTab (page) {
         var vue = this
-        switch (page) {
+        console.log(page)
+        switch (page.index) {
           case 'home':
             vue.showHomePage()
             break
           case 'explore':
             vue.showExplorePage()
             break
-          case 'notify':
-            vue.showNotifyPage()
+          case 'notifications':
+            vue.showNotificationsPage()
+            break
+          case 'messages':
+            vue.showmMessagesPage()
             break
           default:
             vue.showHomePage()

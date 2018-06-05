@@ -11,9 +11,9 @@
         <svg v-else="" viewBox="0 0 24 24" class="rn-4qtqp9 rn-yyyyoo rn-lwhw9o rn-dnmrzs rn-bnwqim rn-m6rgpd rn-lrvibr"><g><path d="M22.46 7.57L12.357 2.115a.751.751 0 0 0-.713 0L1.543 7.57a.75.75 0 0 0 .713 1.32l.815-.44L4.7 19.963c.214 1.215 1.308 2.062 2.658 2.062h9.282c1.352 0 2.445-.848 2.663-2.087l1.626-11.49.818.442c.364.193.82.06 1.017-.304a.752.752 0 0 0-.304-1.016zm-4.638 12.133c-.107.606-.703.822-1.18.822H7.36c-.48 0-1.075-.216-1.178-.798L4.48 7.69 12 3.628l7.522 4.06-1.7 12.015z"></path><path d="M8.22 12.184c0 2.084 1.695 3.78 3.78 3.78s3.78-1.696 3.78-3.78-1.695-3.78-3.78-3.78-3.78 1.696-3.78 3.78zm6.06 0c0 1.258-1.022 2.28-2.28 2.28s-2.28-1.022-2.28-2.28 1.022-2.28 2.28-2.28 2.28 1.022 2.28 2.28z"></path></g></svg>
       </div>
     </a>
-    <a @click="tabClick('search')" :class="[index === 'search' ? 'select':'no-select','flex-item']">
+    <a @click="tabClick('explore')" :class="[index === 'explore' ? 'select':'no-select','flex-item']">
       <div class="svg-wrapper">
-        <svg v-if="index==='search'" viewBox="0 0 24 24">
+        <svg v-if="index==='explore'" viewBox="0 0 24 24">
           <g>
             <path
               d="M22.06 19.94l-3.73-3.73A8.94 8.94 0 0 0 20 11a9 9 0 1 0-9 9 8.95 8.95 0 0 0 5.21-1.67l3.73 3.73c.292.294.676.44 1.06.44s.768-.146 1.06-.44a1.498 1.498 0 0 0 0-2.12zM11 17c-3.308 0-6-2.692-6-6s2.692-6 6-6 6 2.692 6 6-2.692 6-6 6z"></path>
@@ -28,9 +28,9 @@
 
       </div>
     </a>
-    <a @click="tabClick('notify')" :class="[index === 'notify' ? 'select':'no-select','flex-item']">
+    <a @click="tabClick('notifications')" :class="[index === 'notifications' ? 'select':'no-select','flex-item']">
       <div class="svg-wrapper">
-        <svg v-if="index === 'notify'" viewBox="0 0 24 24" class="rn-4qtqp9 rn-yyyyoo rn-lwhw9o rn-dnmrzs rn-bnwqim rn-m6rgpd rn-lrvibr"><g><path d="M21.697 16.468c-.02-.016-2.14-1.64-2.103-6.03.02-2.533-.812-4.782-2.347-6.334-1.375-1.393-3.237-2.164-5.242-2.172h-.013c-2.004.008-3.866.78-5.242 2.172-1.534 1.553-2.367 3.802-2.346 6.333.037 4.332-2.02 5.967-2.102 6.03a.751.751 0 0 0 .448 1.353h4.494c.1 2.544 2.188 4.587 4.756 4.587s4.655-2.043 4.756-4.587h4.494a.75.75 0 0 0 .447-1.352zM12 20.408a2.771 2.771 0 0 1-2.756-2.588h5.512A2.772 2.772 0 0 1 12 20.407z"></path></g></svg>
+        <svg v-if="index === 'notifications'" viewBox="0 0 24 24" class="rn-4qtqp9 rn-yyyyoo rn-lwhw9o rn-dnmrzs rn-bnwqim rn-m6rgpd rn-lrvibr"><g><path d="M21.697 16.468c-.02-.016-2.14-1.64-2.103-6.03.02-2.533-.812-4.782-2.347-6.334-1.375-1.393-3.237-2.164-5.242-2.172h-.013c-2.004.008-3.866.78-5.242 2.172-1.534 1.553-2.367 3.802-2.346 6.333.037 4.332-2.02 5.967-2.102 6.03a.751.751 0 0 0 .448 1.353h4.494c.1 2.544 2.188 4.587 4.756 4.587s4.655-2.043 4.756-4.587h4.494a.75.75 0 0 0 .447-1.352zM12 20.408a2.771 2.771 0 0 1-2.756-2.588h5.512A2.772 2.772 0 0 1 12 20.407z"></path></g></svg>
 
         <svg v-else="" viewBox="0 0 24 24" class="rn-4qtqp9 rn-yyyyoo rn-lwhw9o rn-dnmrzs rn-bnwqim rn-m6rgpd rn-lrvibr">
           <g>
@@ -40,9 +40,9 @@
         </svg>
       </div>
     </a>
-    <a @click="tabClick('message')" :class="[index === 'message' ? 'select':'no-select','flex-item']">
+    <a @click="tabClick('messages')" :class="[index === 'messages' ? 'select':'no-select','flex-item']">
       <div class="svg-wrapper">
-        <svg v-if="index === 'message'" viewBox="0 0 24 24" class="rn-4qtqp9 rn-yyyyoo rn-lwhw9o rn-dnmrzs rn-bnwqim rn-m6rgpd rn-lrvibr"><g><path d="M11.55 12.082a.81.81 0 0 0 .9 0L22 5.716V5.5c0-1.24-1.01-2.25-2.25-2.25H4.25C3.01 3.25 2 4.26 2 5.5v.197l9.55 6.385z"></path><path d="M13.26 13.295a2.266 2.266 0 0 1-2.52-.001L2 7.452v11.67c0 1.24 1.01 2.25 2.25 2.25h15.5c1.24 0 2.25-1.01 2.25-2.25V7.47l-8.74 5.823z"></path></g></svg>
+        <svg v-if="index === 'messages'" viewBox="0 0 24 24" class="rn-4qtqp9 rn-yyyyoo rn-lwhw9o rn-dnmrzs rn-bnwqim rn-m6rgpd rn-lrvibr"><g><path d="M11.55 12.082a.81.81 0 0 0 .9 0L22 5.716V5.5c0-1.24-1.01-2.25-2.25-2.25H4.25C3.01 3.25 2 4.26 2 5.5v.197l9.55 6.385z"></path><path d="M13.26 13.295a2.266 2.266 0 0 1-2.52-.001L2 7.452v11.67c0 1.24 1.01 2.25 2.25 2.25h15.5c1.24 0 2.25-1.01 2.25-2.25V7.47l-8.74 5.823z"></path></g></svg>
 
         <svg v-else="" viewBox="0 0 24 24" class="rn-4qtqp9 rn-yyyyoo rn-lwhw9o rn-dnmrzs rn-bnwqim rn-m6rgpd rn-lrvibr">
           <g>

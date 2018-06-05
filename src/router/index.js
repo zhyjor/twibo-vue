@@ -3,6 +3,10 @@ import Router from 'vue-router'
 import Splash from '../components/splash'
 import Main from '../components/homepage'
 import Home from '../components/home'
+import Messages from '../components/messages'
+import Explore from '../components/explore'
+import Notifications from '../components/notifications'
+
 
 import store from '../store/'
 import {DEBUG} from '../api/config/api-list'
@@ -29,6 +33,30 @@ const router = new Router({
           path: 'home',
           name: 'home',
           component: Home,
+          meta: {
+            requiresAuth: true
+          }
+        },
+        {
+          path: 'messages',
+          name: 'messages',
+          component: Messages,
+          meta: {
+            requiresAuth: true
+          }
+        },
+        {
+          path: 'explore',
+          name: 'explore',
+          component: Explore,
+          meta: {
+            requiresAuth: true
+          }
+        },
+        {
+          path: 'notifications',
+          name: 'notifications',
+          component: Notifications,
           meta: {
             requiresAuth: true
           }

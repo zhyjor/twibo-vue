@@ -1,9 +1,11 @@
 <template>
-
+<div>
+  messages
+</div>
 </template>
 
 <script type="text/ecmascript-6">
 </script>
 
-<style lang="stylus" rel="stylesheet/stylus">
+<style lang="scss" rel="stylesheet/scss">
 </style>
