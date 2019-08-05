@@ -1,6 +1,6 @@
 # twibo-vue
 
-> a web app for weibo based on twitter ui
+> a web app for weibo based on twitter ui come
 
 ## Build Setup
 
